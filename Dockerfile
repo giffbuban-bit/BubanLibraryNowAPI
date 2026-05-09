@@ -12,4 +12,4 @@ RUN dotnet build "BubanLibraryNowAPI/BubanLibraryNowAPI.csproj" -c Release -o /a
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "BubanLibraryNowAPI.dll"]S
+ENTRYPOINT ["dotnet", "BubanLibraryNowAPI.dll"]
